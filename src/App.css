@@ -1,38 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap");
+
+:root {
+  --beige: #ebe9e1;
+  --red: #e43d12;
+}
+
+body,
+html,
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .App {
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--red);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: var(--beige);
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  display: flex;
+  font-size: 35px;
+  flex: 1;
+}
+
+.brandName {
+  color: var(--beige);
+}
+
+.navBar {
+  display: flex;
+  list-style-type: none;
+  flex: auto;
+}
+
+.navBar li {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.link {
+  color: var(--beige);
+  padding: 5px 10px;
+}
+
+.active {
+  background-color: var(--beige);
+  color: var(--red);
+  border-radius: 6px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public/arts/TheGirl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  padding: 160px;
+  color: var(--beige);
+  flex-direction: column;
+}
+
+.container h1 {
+  font-weight: 800;
+  font-size: 120px;
+}
+.container h2 {
+  margin: 80px 0;
+  font-size: 30px;
+}
+
+.container ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.container ul li {
+  margin: 0 10px;
+}
+
+.galContainer {
+  background-color: var(--beige);
+  color: var(--red);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galContainer h1 {
+  margin: 30px 0;
+}
+
+.galContainer ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.galContainer ul li {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.images,
+.sketches,
+.paintings,
+.digitals,
+.animations {
+  background-color: var(--red);
+  color: var(--beige);
+  border-radius: 6px;
+}
+
+.masonry {
+  width: 70%;
+}
+
+.image {
+  display: grid;
+  width: 100%;
+  padding: 10px;
+}
+
+.abtContainer {
+  background-color: var(--beige);
+  color: var(--red);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.abtContainer h1 {
+  margin: 30px 0;
+}
+
+.abtContainer div {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+}
+
+.abtContainer div img {
+  height: 800px;
+  margin-right: 50px;
+  border-radius: 12px;
+}
+
+.abtContainer div span {
+  font-size: 40px;
+  margin-right: -190px;
+  z-index: 9000;
+  text-shadow: 1px 1px 2px black;
+}
+
+.abtContainer div span h2 {
+  font-size: 30px;
+}
+
+.aboutme {
+  width: 50%;
+  font-size: 20px;
+}
+
+/* ################################################## */
+
+@media only screen and (max-width: 480px) {
+  * {
+    font-size: 12px;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+
+  .brandName {
+    font-size: 30px;
+  }
+
+  .header {
+    position: fixed;
+    background-color: var(--red);
+    bottom: 0;
+    height: 50px;
+  }
+
+  .container {
+    padding: 120px 40px;
+  }
+
+  .container h1 {
+    font-weight: 800;
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .container h2 {
+    font-size: 22px;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .container ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 10px;
+  }
+
+  .container ul li {
+    padding: 10px;
+  }
+
+  .masonry {
+    width: 100%;
+  }
+
+  .navBar {
+    flex: 1;
+  }
+
+  .header {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .galContainer {
+    padding-bottom: 80px;
+  }
+
+  .galContainer h1 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .abtContainer {
+    width: 100vw;
+    padding: 0;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  .abtContainer h1 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .abtContainer div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .abtContainer div img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .aboutme {
+    font-size: 14px;
+    padding: 25px;
+  }
+
+  .galContainer ul li {
+    padding: 0 5px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
