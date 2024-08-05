@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../app.css";
+import "../App.css";
 import Masonry from "../components/masonry.js";
 import { useEffect, useState } from "react";
 
