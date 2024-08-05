@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../app.css";
 import Masonry from "../components/masonry.js";
 import { useEffect, useState } from "react";
 
@@ -55,7 +55,7 @@ function Gallery() {
       </header>
 
       <div className="galContainer">
-        <h1>colllection of my arts</h1>
+        <h1>my art gallery</h1>
         <ul>
           <li
             className={className === "images" ? "images" : ""}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../app.css";
 
 function Home() {
   return (
@@ -44,6 +44,10 @@ function Home() {
           <li>digital art</li>
           <li>animation</li>
         </ul>
+
+        <Link className="btnWork" to="/gallery">
+          see my works
+        </Link>
       </div>
     </div>
   );

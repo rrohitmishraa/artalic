@@ -3,6 +3,8 @@
 :root {
   --beige: #ebe9e1;
   --red: #e43d12;
+  --blue: #bae2e1;
+  --pink: rgb(239, 125, 148);
 }
 
 body,
@@ -27,13 +29,11 @@ html,
 }
 
 .header {
-  height: 80px;
   width: 100%;
   padding: 0 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--beige);
 }
 
 .icon {
@@ -74,9 +74,9 @@ html,
 }
 
 .container {
-  height: 100vh;
   width: 100%;
-  background-image: url("/public/arts/TheGirl.png");
+  min-height: 100%;
+  background-image: url("/public/arts/TheGirl.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -108,11 +108,21 @@ html,
   margin: 0 10px;
 }
 
+.btnWork {
+  background-color: var(--beige);
+  color: var(--red);
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 20px 60px;
+  margin-top: 130px;
+}
+
+/* ################# GALLERY ############### */
+
 .galContainer {
   background-color: var(--beige);
   color: var(--red);
   width: 100%;
-  height: 100%;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -146,59 +156,58 @@ html,
 }
 
 .masonry {
-  width: 70%;
+  width: 90%;
 }
 
 .image {
   display: grid;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 30px;
 }
+
+/* ################# ABOUT ############### */
 
 .abtContainer {
   background-color: var(--beige);
   color: var(--red);
   width: 100%;
-  height: 100%;
-  padding: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.abtContainer h1 {
-  margin: 30px 0;
-}
-
-.abtContainer div {
-  height: 100vh;
-  width: 70%;
+.subImage {
+  width: 50%;
   display: flex;
+  justify-content: end;
+  padding: 60px;
 }
 
-.abtContainer div img {
+.abtImage {
   height: 800px;
-  margin-right: 50px;
+  width: auto;
   border-radius: 12px;
 }
 
-.abtContainer div span {
-  font-size: 40px;
-  margin-right: -190px;
-  z-index: 9000;
-  text-shadow: 1px 1px 2px black;
+.sub {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.abtContainer div span h2 {
-  font-size: 30px;
+.sub h1 {
+  margin: 0px 0;
+  font-size: 140px;
 }
 
 .aboutme {
-  width: 50%;
   font-size: 20px;
+  width: 70%;
+  line-height: 1.8;
 }
 
-/* ################################################## */
+/* ###################### MOBILE UI ############################ */
 
 @media only screen and (max-width: 480px) {
   * {
@@ -218,7 +227,7 @@ html,
   }
 
   .container {
-    padding: 120px 40px;
+    padding: 40px 40px 80px 40px;
   }
 
   .container h1 {
@@ -256,6 +265,14 @@ html,
     margin-top: 20px;
   }
 
+  .btnWork {
+    font-size: 14px;
+    margin-top: 60px;
+    padding: 8px 20px;
+  }
+
+  /* ################# MOBILE GALLERY ############### */
+
   .galContainer {
     padding-bottom: 80px;
   }
@@ -265,41 +282,44 @@ html,
     margin-top: 20px;
   }
 
+  .image {
+    padding: 2px;
+    border-radius: 8px;
+  }
+
+  /* ################# MOBILE ABOUT ############### */
+
   .abtContainer {
-    width: 100vw;
-    padding: 0;
-    align-items: center;
-    padding-bottom: 80px;
-  }
-
-  .abtContainer h1 {
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .abtContainer div {
     flex-direction: column;
+    padding: 80px 16px;
+  }
+
+  .subImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .abtImage {
+    height: 400px;
+  }
+
+  .sub {
     width: 100%;
   }
 
-  .abtContainer div img {
-    width: 100%;
-    height: auto;
-    border-radius: 0;
+  .sub h1 {
+    margin: 20px 0;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
   }
 
   .aboutme {
-    font-size: 14px;
-    padding: 25px;
-  }
-
-  .galContainer ul li {
-    padding: 0 5px;
-    cursor: pointer;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.6;
   }
 }
