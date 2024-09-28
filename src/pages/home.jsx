@@ -39,7 +39,7 @@ function Home() {
         className="w-1/2 h-screen flex flex-col
        bg-red-600"
       >
-        <div className="h-[120px] w-1/1 flex justify-start items-center text-[20px] ml-40 font-bold text-white">
+        <div className="h-[120px] w-1/1 flex justify-start items-center text-[20px] ml-40 font-bold text-[beige]">
           <Link to="/" className="mr-[120px]">
             Home
           </Link>
@@ -50,12 +50,12 @@ function Home() {
             About
           </Link>
         </div>
-        <div className="ml-[340px] mt-[120px] text-[50px] font-bold text-white">
+        <div className="ml-[340px] mt-[120px] text-[50px] font-bold text-[beige]">
           Choices define you, <br />I chose art.
         </div>
         <Link
           to="./gallery"
-          className="bg-white text-red-500 w-[180px] h-[60px] ml-[340px] mt-[80px] text-[20px] active:bg-gray flex items-center justify-center"
+          className="bg-[beige] text-red-500 w-[180px] h-[60px] ml-[340px] mt-[80px] text-[20px] hover:bg-transparent hover:border-2 hover: border-[beige] hover:text-[beige] flex items-center justify-center"
         >
           See My Work
         </Link>
