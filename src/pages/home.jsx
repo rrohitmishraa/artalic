@@ -14,7 +14,7 @@ function Home() {
           <img
             src="./arts/logo.png"
             alt=""
-            className="h-8 mt-[2px] mr-[6px] -ml-[12px]"
+            className="h-9 mt-[2px] mr-[6px] -ml-[12px] mb-[5px]"
           />
           <span className="text-[40px]">artalic</span>
         </div>
@@ -24,7 +24,7 @@ function Home() {
             alt=""
             className="h-[720px] -ml-20"
           />
-          <ul className="text-gray-400 text-[20px] mt-20">
+          <ul className="text-gray-400 text-[22px] mt-20">
             <li className="mb-12">Drawing</li>
             <li className="mb-12">Sketching</li>
             <li className="mb-12">Painting</li>
@@ -59,6 +59,23 @@ function Home() {
         >
           See My Work
         </Link>
+
+        <div className="absolute right-0 bottom-0 flex justify-end items-center m-[60px]">
+          <a href="https:/instagram.com" target="_blank">
+            <img src="./arts/insta.png" alt="" className="h-[30px]" />
+          </a>
+
+          <a href="https:/youtube.com" target="_blank">
+            <img
+              src="./arts/youtube.png"
+              alt=""
+              className="h-[40px] ml-[80px]"
+            />
+          </a>
+          <a href="mailto:mitalykumari07@gmail.com" target="_blank">
+            <img src="./arts/email.png" alt="" className="h-[35px] ml-[80px]" />
+          </a>
+        </div>
       </div>
     </div>
   );
