@@ -34,10 +34,10 @@ function Home() {
           <Link to="/" className="mr-[120px]">
             Home
           </Link>
-          <Link to="./gallery" className="mr-[120px]">
+          <Link to="/gallery" className="mr-[120px]">
             Gallery
           </Link>
-          <Link to="./about" className="mr-[120px]">
+          <Link to="/about" className="mr-[120px]">
             About
           </Link>
         </div>
