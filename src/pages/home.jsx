@@ -6,7 +6,7 @@ function Home() {
       <img
         src="./arts/mittaly.png"
         alt=""
-        className="h-[920px] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+        className="h-[90%] absolute bottom-0 left-1/2 transform -translate-x-1/2"
       />
 
       <div className="w-1/2 bg-beige flex h-screen flex-col">
@@ -22,7 +22,7 @@ function Home() {
           <img
             src="./arts/text-mittaly.png"
             alt=""
-            className="h-[720px] -ml-20"
+            className="h-[85%] -ml-20"
           />
           <ul className="text-gray-400 text-[22px] mt-20">
             <li className="mb-12">Drawing</li>
