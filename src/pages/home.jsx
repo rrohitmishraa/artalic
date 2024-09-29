@@ -61,11 +61,11 @@ function Home() {
         </Link>
 
         <div className="absolute right-0 bottom-0 flex justify-end items-center m-[60px]">
-          <a href="https:/instagram.com" target="_blank">
+          <a href="https://www.instagram.com" target="_blank">
             <img src="./arts/insta.webp" alt="" className="h-[30px]" />
           </a>
 
-          <a href="https:/youtube.com" target="_blank">
+          <a href="https://youtube.com" target="_blank">
             <img
               src="./arts/youtube.webp"
               alt=""
