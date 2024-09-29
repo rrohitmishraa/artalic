@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         tint: "rgb(59, 130, 143)",
-        beige: "rgb(240, 240, 236)",
+        beige: "rgb(240, 240, 235)",
       },
       fontFamily: {
         pop: ["Poppins"],
