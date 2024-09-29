@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="flex overflow-hidden">
       <img
-        src="./arts/mittaly.png"
+        src="./arts/mittaly.webp"
         alt=""
         className="h-[90%] absolute bottom-0 left-1/2 transform -translate-x-1/2"
       />
@@ -12,7 +12,7 @@ function Home() {
       <div className="w-1/2 bg-beige flex h-screen flex-col">
         <div className="bg-tint text-beige h-[120px] w-[340px] p-3 flex justify-center items-center">
           <img
-            src="./arts/logo.png"
+            src="./arts/logo.webp"
             alt=""
             className="h-9 mt-[2px] mr-[6px] -ml-[12px] mb-[5px]"
           />
@@ -20,7 +20,7 @@ function Home() {
         </div>
         <div className="flex pt-24 h-screen">
           <img
-            src="./arts/text-mittaly.png"
+            src="./arts/text-mittaly.webp"
             alt=""
             className="h-[85%] -ml-20"
           />
@@ -62,18 +62,22 @@ function Home() {
 
         <div className="absolute right-0 bottom-0 flex justify-end items-center m-[60px]">
           <a href="https:/instagram.com" target="_blank">
-            <img src="./arts/insta.png" alt="" className="h-[30px]" />
+            <img src="./arts/insta.webp" alt="" className="h-[30px]" />
           </a>
 
           <a href="https:/youtube.com" target="_blank">
             <img
-              src="./arts/youtube.png"
+              src="./arts/youtube.webp"
               alt=""
               className="h-[40px] ml-[80px]"
             />
           </a>
           <a href="mailto:mitalykumari07@gmail.com" target="_blank">
-            <img src="./arts/email.png" alt="" className="h-[35px] ml-[80px]" />
+            <img
+              src="./arts/email.webp"
+              alt=""
+              className="h-[35px] ml-[80px]"
+            />
           </a>
         </div>
       </div>
