@@ -12,10 +12,14 @@ function Home() {
       />
 
       {/* HEADER */}
-      <Header text="art by mittaly" textColor="text-red-600" />
+      <Header
+        text="art by mittaly"
+        textColor="text-red-600"
+        menuTextColor="text-white"
+      />
 
       {/* left section */}
-      <div className="w-1/2 bg-beige flex h-screen flex-col pt-[85px]">
+      <div className="w-1/2 bg-white flex h-screen flex-col pt-[85px]">
         <div className="flex pt-24 h-screen">
           <img
             src="./arts/text-mittaly.webp"
@@ -36,12 +40,12 @@ function Home() {
 
       {/* right section */}
       <div className="w-1/2 h-screen flex flex-col bg-red-600 pt-[120px]">
-        <div className="ml-[340px] mt-[120px] text-[50px] font-bold text-[beige]">
+        <div className="ml-[340px] mt-[120px] text-[50px] font-bold text-white">
           Choices define you, <br />I chose art.
         </div>
         <Link
           to="./gallery"
-          className="bg-[beige] text-red-600 w-[180px] h-[60px] ml-[340px] mt-[80px] text-[20px] hover:bg-transparent hover:border-2 hover: border-[beige] hover:text-[beige] flex items-center justify-center"
+          className="bg-white text-red-600 w-[180px] h-[60px] ml-[340px] mt-[80px] text-[20px] hover:bg-transparent hover:border-2 hover: border-[white] hover:text-[white] flex items-center justify-center"
         >
           See My Work
         </Link>

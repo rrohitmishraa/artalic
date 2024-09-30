@@ -29,8 +29,9 @@ function Gallery() {
       {/* HEADER */}
       <Header
         text="my art gallery"
-        textColor="text-[beige]"
+        textColor="text-white"
         headerBG="bg-red-600"
+        menuTextColor="text-white"
       />
 
       {/* left section */}

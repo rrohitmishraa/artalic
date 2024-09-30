@@ -9,12 +9,12 @@ export default function Header(props) {
         <div className="w-1/2 flex">
           <Link
             to="/"
-            className="bg-tint text-beige h-[120px] w-[41.28%] p-3 flex justify-center items-center"
+            className={`bg-tint text-white h-[120px] w-[41.28%] p-3 flex justify-center items-center`}
           >
             <img
               src="./arts/logo.webp"
               alt=""
-              className="h-9 mt-[2px] mr-[6px] -ml-[12px] mb-[5px]"
+              className="h-8 mt-[2px] mr-[6px] -ml-[12px] mb-[5px]"
             />
             <span className="text-[40px]">artalic</span>
           </Link>
@@ -26,14 +26,16 @@ export default function Header(props) {
         </div>
 
         {/* header right */}
-        <div className="h-1/1 w-1/2 flex justify-start items-center text-[20px] pl-40 font-bold text-[beige]">
-          <Link to="/" className="mr-[120px]">
+        <div
+          className={`h-1/1 w-1/2 flex justify-start items-center text-[20px] pl-40 font-bold ${props.menuTextColor}`}
+        >
+          <Link to="/" className={`mr-[120px]`}>
             Home
           </Link>
-          <Link to="/gallery" className="mr-[120px]">
+          <Link to="/gallery" className={`mr-[120px]`}>
             Gallery
           </Link>
-          <Link to="/about" className="mr-[120px]">
+          <Link to="/about" className={`mr-[120px]`}>
             About
           </Link>
         </div>

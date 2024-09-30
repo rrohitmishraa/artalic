@@ -37,7 +37,7 @@ export default function Masonry(props) {
                 />
               ) : isVideo ? (
                 <video
-                  preload="none"
+                  // preload="none"
                   className="rounded-[8px]"
                   width="100%"
                   controls
