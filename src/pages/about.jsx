@@ -13,9 +13,9 @@ function About() {
 
       {/* left section */}
       <div className="w-1/2 bg-white flex flex-col h-screen justify-center items-start pl-[120px]">
-        <h1 className="text-black text-[20px] font-bold">About Me</h1>
-        <h1 className="text-black text-[80px]">Mittaly Kumari</h1>
-        <h2 className="text-black text-[20px] mb-[20px]">artist | educator</h2>
+        <h1 className="text-[20px] font-bold">About Me</h1>
+        <h1 className="text-red-600 text-[80px]">Mittaly Kumari</h1>
+        <h2 className="text-[20px] mb-[20px]">artist | educator</h2>
 
         <p>
           Hello,
