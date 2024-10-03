@@ -1,1 +1,8 @@
-["./arts/animations/1.mp4"]
+[
+  "./arts/animations/1.webm",
+  "./arts/animations/2.webm",
+  "./arts/animations/3.webm",
+  "./arts/animations/4.webm",
+  "./arts/animations/5.webm",
+  "./arts/animations/6.webm"
+]

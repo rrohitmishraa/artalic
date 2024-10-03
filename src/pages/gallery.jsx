@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Masonry from "../components/masonry.jsx";
 import { useEffect, useState } from "react";
 import Header from "../components/header.jsx";

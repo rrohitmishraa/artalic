@@ -8,7 +8,7 @@ function Home() {
       <img
         src="./arts/mittaly.webp"
         alt=""
-        className="h-[90%] absolute bottom-0 left-1/2 transform -translate-x-1/2"
+        className="md:h-[90%] md:absolute md:bottom-0 md:left-1/2 md:transform md:-translate-x-1/2"
       />
 
       {/* HEADER */}
@@ -19,12 +19,12 @@ function Home() {
       />
 
       {/* left section */}
-      <div className="w-1/2 bg-white flex h-screen flex-col pt-[85px]">
-        <div className="flex pt-24 h-screen">
+      <div className="md:w-1/2 bg-white flex h-screen flex-col md:pt-[85px]">
+        <div className="flex md:pt-24 h-screen">
           <img
             src="./arts/text-mittaly.webp"
             alt=""
-            className="h-[85%] -ml-20"
+            className="md:h-[85%] md:-ml-20"
           />
 
           <ul className="text-gray-400 text-[22px] mt-20">
@@ -39,13 +39,13 @@ function Home() {
       </div>
 
       {/* right section */}
-      <div className="w-1/2 h-screen flex flex-col bg-red-600 pt-[120px]">
-        <div className="ml-[340px] mt-[120px] text-[50px] font-bold text-white">
+      <div className="md:w-1/2 h-screen flex flex-col bg-red-600 md:pt-[120px]">
+        <div className="md:ml-[340px] md:mt-[120px] text-[50px] font-bold text-white">
           Choices define you, <br />I chose art.
         </div>
         <Link
           to="./gallery"
-          className="bg-white text-red-600 w-[180px] h-[60px] ml-[340px] mt-[80px] text-[20px] hover:bg-transparent hover:border-2 hover: border-[white] hover:text-[white] flex items-center justify-center"
+          className="bg-white text-red-600 md:w-[180px] md:h-[60px] md:ml-[340px] md:mt-[80px] text-[20px] hover:bg-transparent hover:border-2 hover:border-[white] hover:text-[white] flex items-center justify-center"
         >
           See My Work
         </Link>
