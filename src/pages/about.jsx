@@ -3,21 +3,23 @@ import SocialMediaIcons from "../components/socialmediaicons";
 
 function About() {
   return (
-    <div className="flex">
+    <div className="md:flex md:h-screen">
       <Header
         text="about me"
-        textColor="text-red-600"
+        textColor="md:text-red-600"
         headerBG=""
-        menuTextColor="text-red-600"
+        menuTextColor="md:text-red-600 md:cursor-pointer"
       />
 
       {/* left section */}
-      <div className="w-1/2 bg-white flex flex-col h-screen justify-center items-start pl-[120px]">
-        <h1 className="text-[20px] font-bold">About Me</h1>
-        <h1 className="text-red-600 text-[80px]">Mittaly Kumari</h1>
-        <h2 className="text-[20px] mb-[20px]">artist | educator</h2>
+      <div className="overflow-scroll h-[calc(100vh-175px)] pl-[20px] pr-[20px] pt-[100px] md:pt-[180px] pb-0 leading-[2] md:p-0 mt-0 md:flex md:w-1/2 bg-white md:flex-col md:h-screen md:justify-center md:items-start md:pl-[120px]">
+        <h1 className="md:text-[20px] md:font-bold">About Me</h1>
+        <h1 className="text-red-600 md:text-[80px] text-[30px]">
+          Mittaly Kumari
+        </h1>
+        <h2 className="md:text-[20px] mb-[20px]">artist | educator</h2>
 
-        <p>
+        <p className="md:h-screen">
           Hello,
           <br />
           I’m Mittaly Kumari, a passionate artist and dedicated painting
@@ -45,23 +47,23 @@ function About() {
       </div>
 
       {/* right section */}
-      <div className="w-1/2 h-screen flex bg-white flex-col pt-[120px] overflow-scroll">
-        <div className="absolute bottom-0 bg-red-600 text-[28px] text-white px-5 py-2 flex justify-center items-center rounded-[6px] mb-[240px] ml-[90px] z-50">
+      <div className="mt-[-440px] md:flex md:w-1/2 md:h-screen md:bg-white md:flex-col md:pt-[120px] md:overflow-scroll">
+        <div className="hidden md:absolute md:bottom-0 md:bg-red-600 md:text-[28px] md:text-white md:px-5 md:py-2 md:flex md:justify-center md:items-center md:rounded-[6px] md:mb-[240px] md:ml-[90px] md:z-50">
           artist
         </div>
 
         <img
           src="./arts/mittaly1.webp"
           alt=""
-          className="h-[90%] absolute bottom-0 right-0 mr-[120px]"
+          className="hidden md:flex md:h-[90%] md:absolute md:bottom-0 md:right-0 md:mr-[120px]"
         />
 
-        <div className="absolute bottom-0 right-0 bg-red-600 text-[28px] text-white px-5 py-2 flex justify-center items-center rounded-[6px] mb-[540px] mr-[190px] z-50">
+        <div className="hidden md:absolute md:bottom-0 md:right-0 md:bg-red-600 md:text-[28px] md:text-white md:px-5 md:py-2 md:flex md:justify-center md:items-center md:rounded-[6px] md:mb-[540px] md:mr-[190px] md:z-50">
           educator
         </div>
       </div>
 
-      <SocialMediaIcons />
+      <SocialMediaIcons className="md:cursor-pointer" />
     </div>
   );
 }

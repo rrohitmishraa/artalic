@@ -4,22 +4,24 @@ export default function Header(props) {
   return (
     <div>
       {/* HEADER */}
-      <div className={`absolute flex w-screen h-[120px] ${props.headerBG}`}>
+      <div
+        className={`md:absolute md:flex md:w-screen md:h-[120px] ${props.headerBG}`}
+      >
         {/* header left */}
-        <div className="w-1/2 flex">
+        <div className="md:w-1/2 flex md:flex-row w-[100%]">
           <Link
             to="/"
-            className={`bg-tint text-white h-[120px] w-[41.28%] p-3 flex justify-center items-center`}
+            className="md:static absolute top-0 left-0 bg-tint text-white h-[80px] md:h-[120px] w-[41.28%] md:p-3 flex justify-center items-center"
           >
             <img
               src="./arts/logo.webp"
               alt=""
-              className="h-8 mt-[2px] mr-[6px] -ml-[12px] mb-[5px]"
+              className="h-6 md:h-8 md:mt-[2px] mr-[4px] md:mr-[6px] md:-ml-[12px] md:mb-[5px]"
             />
-            <span className="text-[40px]">artalic</span>
+            <span className="md:text-[40px] text-[30px]">artalic</span>
           </Link>
           <div
-            className={`flex justify-center items-center w-[calc(100%-41.28%)] text-[28px] ${props.textColor}`}
+            className={`hidden md:flex md:justify-center md:items-center md:w-[calc(100%-41.28%)] md:text-[28px] ${props.textColor}`}
           >
             {props.text}
           </div>
@@ -27,15 +29,18 @@ export default function Header(props) {
 
         {/* header right */}
         <div
-          className={`h-1/1 w-1/2 flex justify-start items-center text-[20px] pl-40 font-bold ${props.menuTextColor}`}
+          className={`fixed bottom-0 md:shadow-none shadow-[rgba(0,_0,_0,_0.2)_0px_-10px_10px_-7px] md:bg-transparent bg-white p-[20px] justify-around font-bold md:static md:h-full w-[100%] md:w-1/2 flex md:justify-start md:items-center md:text-[20px] md:pl-40 md:font-bold ${props.menuTextColor}`}
         >
-          <Link to="/" className={`mr-[120px]`}>
+          <Link to="/" className="md:mr-[120px] md:p-0 md:bg-transparent">
             Home
           </Link>
-          <Link to="/gallery" className={`mr-[120px]`}>
+          <Link
+            to="/gallery"
+            className="md:mr-[120px] md:p-0 md:bg-transparent"
+          >
             Gallery
           </Link>
-          <Link to="/about" className={`mr-[120px]`}>
+          <Link to="/about" className="md:mr-[120px] md:p-0 md:bg-transparent">
             About
           </Link>
         </div>
