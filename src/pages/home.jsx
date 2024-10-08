@@ -24,7 +24,7 @@ function Home() {
           <img
             src="./arts/text-mittaly.webp"
             alt=""
-            className="md:h-[85%] w-[220px] ml-[80px] md:opacity-100 opacity-20 md:block md:-ml-20 rotate-90 md:rotate-0 md:w-auto md:mt-0"
+            className="md:h-[85%] w-[220px] ml-[80px] md:opacity-100 opacity-30 md:block md:-ml-20 rotate-90 md:rotate-0 md:w-auto md:mt-0"
           />
 
           <ul className="md:text-gray-400 md:text-[22px] md:block md:mt-20 text-[rgba(255,255,255,0.6)] pl-[28px] mt-[-90px]">

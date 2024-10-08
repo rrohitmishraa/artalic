@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header(props) {
+  const [page, setPage] = useState(window.location.pathname);
   return (
     <div>
       {/* HEADER */}
@@ -31,16 +33,32 @@ export default function Header(props) {
         <div
           className={`fixed bottom-0 md:shadow-none shadow-[rgba(0,_0,_0,_0.2)_0px_-10px_10px_-7px] md:bg-transparent bg-white p-[20px] justify-around font-bold md:static md:h-full w-[100%] md:w-1/2 flex md:justify-start md:items-center md:text-[20px] md:pl-40 md:font-bold ${props.menuTextColor}`}
         >
-          <Link to="/" className="md:mr-[120px] md:p-0 md:bg-transparent">
+          <Link
+            to="/"
+            className={`md:mr-[120px] md:py-[8px] md:px-[15px] ${
+              page === "/" ? "bg-white text-red-600" : "md:bg-transparent"
+            }`}
+          >
             Home
           </Link>
           <Link
             to="/gallery"
-            className="md:mr-[120px] md:p-0 md:bg-transparent"
+            className={`md:mr-[120px] md:py-[8px] md:px-[15px] ${
+              page === "/gallery"
+                ? "bg-white text-red-600"
+                : "md:bg-transparent"
+            }`}
           >
             Gallery
           </Link>
-          <Link to="/about" className="md:mr-[120px] md:p-0 md:bg-transparent">
+          <Link
+            to="/about"
+            className={`md:mr-[120px] md:py-[8px] md:px-[15px] ${
+              page === "/about"
+                ? "md:bg-red-600 md:text-white text-red-600"
+                : "md:bg-transparent"
+            }`}
+          >
             About
           </Link>
         </div>
